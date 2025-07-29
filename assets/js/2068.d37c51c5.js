@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_notes=self.webpackChunkmy_notes||[]).push([[2068],{2068:(e,s,c)=>{c.d(s,{createInfoServices:()=>n.v});var n=c(1366);c(8198)}}]);

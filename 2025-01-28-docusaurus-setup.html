@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-2025-01-28-docusaurus-setup" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Docusaurusで知識ベースを構築した記録 | AI Research Documents</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://murasaqi.github.io/AI_Research_Documents/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://murasaqi.github.io/AI_Research_Documents/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://murasaqi.github.io/AI_Research_Documents/2025-01-28-docusaurus-setup"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Docusaurusで知識ベースを構築した記録 | AI Research Documents"><meta data-rh="true" name="description" content="背景・モチベーション"><meta data-rh="true" property="og:description" content="背景・モチベーション"><link data-rh="true" rel="icon" href="/AI_Research_Documents/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://murasaqi.github.io/AI_Research_Documents/2025-01-28-docusaurus-setup"><link data-rh="true" rel="alternate" href="https://murasaqi.github.io/AI_Research_Documents/2025-01-28-docusaurus-setup" hreflang="ja"><link data-rh="true" rel="alternate" href="https://murasaqi.github.io/AI_Research_Documents/2025-01-28-docusaurus-setup" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Docusaurusで知識ベースを構築した記録","item":"https://murasaqi.github.io/AI_Research_Documents/2025-01-28-docusaurus-setup"}]}</script><link rel="stylesheet" href="/AI_Research_Documents/assets/css/styles.7630563d.css">
+<script src="/AI_Research_Documents/assets/js/runtime~main.c833994f.js" defer="defer"></script>
+<script src="/AI_Research_Documents/assets/js/main.349b3fb3.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/AI_Research_Documents/"><div class="navbar__logo"><img src="/AI_Research_Documents/img/logo.svg" alt="AI Research Documents Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/AI_Research_Documents/img/logo.svg" alt="AI Research Documents Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Research Documents</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/AI_Research_Documents/">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-org/my-notes" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードを切り替える(現在はシステムモード)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/AI_Research_Documents/">AI Research Documents</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/AI_Research_Documents/2025-07-29-claude-session-logging-with-screenshots">すべてのメモ</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/2025-07-29-claude-session-logging-with-screenshots">Claude Codeセッション自動記録システムの構築</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/2025-01-29-docusaurus-customization">Docusaurusのカスタマイズ - 日付表示とカラーパレット</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/2025-01-28-ai-dialogue-format">AI対話記録フォーマットの策定</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/2025-01-28-claude-code-conversations">Claude Codeとの会話記録</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/AI_Research_Documents/2025-01-28-docusaurus-setup">Docusaurusで知識ベースを構築した記録</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/2025-01-28-getting-started">セットアップメモ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/ai-dialogue-format-template">AI対話記録フォーマット - クイックリファレンス</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/AI_Research_Documents/mermaid-test">Mermaidダイ アグラムテスト</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/AI_Research_Documents/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">すべてのメモ</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Docusaurusで知識ベースを構築した記録</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>Docusaurusで知識ベースを構築した記録</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="背景モチベーション">背景・モチベーション<a href="#背景モチベーション" class="hash-link" aria-label="背景・モチベーション への直接リンク" title="背景・モチベーション への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="なぜ知識ベースが必要だったか">なぜ知識ベースが必要だったか<a href="#なぜ知識ベースが必要だったか" class="hash-link" aria-label="なぜ知識ベースが必要だったか への直接リンク" title="なぜ知識ベースが必要だったか への直接リンク">​</a></h3>
+<p>日々 の開発作業やAI研究の中で、以下のような課題を感じていた：</p>
+<ul>
+<li>開発中の気づきやAIに関する実験結果が散逸してしまう</li>
+<li>後から「あの時どうやったっけ？」と思い出せない</li>
+<li>チームメンバーと知見を共有する手段が欲しい</li>
+<li>GitHubで履歴管理して、変更履歴を追跡したい</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="理想とする要件">理想とする要件<a href="#理想とする要件" class="hash-link" aria-label="理想とする要件 への直接リンク" title="理想とする要件 への直接リンク">​</a></h3>
+<ul>
+<li><strong>気軽に書ける</strong>: 思いついたらすぐメモできる</li>
+<li><strong>エディタの自由</strong>: VSCodeでもVimでも好きなエディタで編集</li>
+<li><strong>整理は後回し</strong>: まず書いて、整理は後から</li>
+<li><strong>AI活用</strong>: AIによる自動ライティングや整理も活用したい</li>
+<li><strong>共有しやすい</strong>: 必要に応じてチームに公開できる</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="claude-codeとの対話で方針を策定">Claude Codeとの対話で方針を策定<a href="#claude-codeとの対話で方針を策定" class="hash-link" aria-label="Claude Codeとの対話で方針を策定 への直接リンク" title="Claude Codeとの対話で方針を策定 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-初期の提案と課題認識">1. 初期の提案と課題認識<a href="#1-初期の提案と課題認識" class="hash-link" aria-label="1. 初期の提案と課題認識 への直接リンク" title="1. 初期の提案と課題認識 への直接リンク">​</a></h3>
+<blockquote>
+<p>💭 <strong>私の要望</strong><br>
+<!-- -->「カジュアルに開発中の記録やAIに関する備忘録をMarkdownで記録してGithub上に履歴を残したい。そのためのシンプルなシステムを考案して」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの提案</strong><br>
+<!-- -->構造化されたシステムを提案しますね。日次記録とトピック別整理を組み合わせた構成はいかがでしょうか：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">dev-notes/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── README.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── daily/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── 2025/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│       └── 01/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│           └── 2025-01-28.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── topics/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── ai/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── development/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── learning/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">└── templates/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    └── daily-template.md</span><br></span></code></pre></div></div>
+<p>日次記録フォーマットやコミットルール、週次振り返りなど、体系的な運用フローも含めて提案します。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>💭 <strong>私の追加要望</strong><br>
+<!-- -->「Docusaurusでプレビュー可能な構成を考えて」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの対応</strong><br>
+<!-- -->Docusaurus対応版にアップデートします：</p>
+<ul>
+<li><code>docs/daily/</code>（日次記録）</li>
+<li><code>docs/ai/</code>（AI関連トピック）</li>
+<li><code>docs/development/</code>（開発トピック）</li>
+<li><code>blog/</code>（週次サマリー）</li>
+</ul>
+<p>サイドバー自動生成、タグ機能、MDXサポートなど、Docusaurusの機能をフル活用できる構成です。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>💭 <strong>私の本音</strong><br>
+<!-- -->「カテゴリごとにディレクトリを変えるのも良いが、細かく整理しながらアップデートするのは性に合わない。まずは書いて雑に放り込んで、自動もしくはあとから整理ができるような仕組みを考えて」</p>
+</blockquote>
+<p>→ ここで重要な要件が明確に：<strong>整理は苦手、まず書くことを優先したい</strong> 🎯</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-書き捨て自動整理型システムの検討">2. 「書き捨て→自動整理」型システムの検討<a href="#2-書き捨て自動整理型システムの検討" class="hash-link" aria-label="2. 「書き捨て→自動整理」型システムの検討 への直接リンク" title="2. 「書き捨て→自動整理」型システムの検討 への直接リンク">​</a></h3>
+<blockquote>
+<p>🤖 <strong>Claude Codeの理解と新提案</strong><br>
+<!-- -->なるほど！整理は後回しで、まず書くことに集中できる仕組みですね。こんなアプローチはどうでしょう：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">my-notes/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── docs/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── inbox/           # 全ての新規投稿はここに</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   │   ├── 2025-01-28-001.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   │   ├── 2025-01-28-002.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   │   └── 2025-01-29-001.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── organized/       # AI/手動で整理されたもの</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">└── scripts/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    └── auto-organize.js</span><br></span></code></pre></div></div>
+<p><strong>自動整理の仕組み：</strong></p>
+<ul>
+<li>🤖 AIベースの自動タグ付け（内容を解析して提案）</li>
+<li>🔍 スマート検索ページ（タグクラウド、全文検索）</li>
+<li>⚡ クイック投稿（<code>note.sh &quot;タイトル&quot;</code>で即開始）</li>
+<li>📊 週次AIレビュー（整理提案、重複検出）</li>
+<li>🎯 ドラッグ&amp;ドロップ整理UI</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-obsidianとの比較検討">3. Obsidianとの比較検討<a href="#3-obsidianとの比較検討" class="hash-link" aria-label="3. Obsidianとの比較検討 への直接リンク" title="3. Obsidianとの比較検討 への直接リンク">​</a></h3>
+<blockquote>
+<p>💭 <strong>私の質問</strong><br>
+<!-- -->「Obsidianとこのシステムを比較したときどちらが気軽に更新をしつづけられるでしょうか」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの率直な分析</strong></p>
+<p>正直に比較しますと...</p>
+<p><strong>📊 記録の気軽さスコア</strong></p>
+<ul>
+<li>Obsidian: ████████████ (12/12)</li>
+<li>Docusaurus: ███████ (7/12)</li>
+</ul>
+<p><strong>Obsidianが優れている点：</strong></p>
+<ul>
+<li>⚡ アプリ起動→すぐメモ（2秒）</li>
+<li>📱 モバイルアプリ完備</li>
+<li>🔗 [[リンク]]で自然につながる</li>
+<li>🕸️ グラフビューが美しい</li>
+<li>💾 オフライン完全対応</li>
+<li>🚫 Git/ビルド/デプロイ不要</li>
+</ul>
+<p><strong>Docusaurusが優れている点：</strong></p>
+<ul>
+<li>🌐 URLで簡単共有</li>
+<li>🎨 美しいWebサイト</li>
+<li>🔧 プログラマブル</li>
+<li>👥 チーム共有に最適</li>
+</ul>
+<p><strong>結論：気軽に更新し続けたいなら Obsidian をお勧めします。</strong>
+ただし、チーム共有が必須ならDocusaurusですね。</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-エディタ要件の追加と方針転換">4. エディタ要件の追加と方針転換<a href="#4-エディタ要件の追加と方針転換" class="hash-link" aria-label="4. エディタ要件の追加と方針転換 への直接リンク" title="4. エディタ要件の追加と方針転換 への直接リンク">​</a></h3>
+<blockquote>
+<p>💭 <strong>私の追加要件</strong><br>
+<!-- -->「書くエディターはVSCodeやVIMで書いたり、適宜AIによる自動ライティングも活用したい」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの新アプローチ</strong><br>
+<!-- -->エディタの自由度を重視した構成に切り替えましょう！</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">dev-notes/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── notes/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── 2025-01-28-001.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── ...</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── scripts/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── new.sh          # 新規ノート作成</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   ├── ai-enhance.py   # AI拡張</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── publish.sh      # 公開用に変換</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">└── .github/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    └── workflows/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        └── build-site.yml</span><br></span></code></pre></div></div>
+<p><strong>エディタ連携：</strong></p>
+<ul>
+<li>Vim: <code>:Note</code>で新規作成、<code>:AIComplete</code>でAI補完</li>
+<li>VSCode: タスクとスニペット設定</li>
+<li>AI補助: タグ生成、要約、関連コンテンツ追加</li>
+<li>公開: 11ty  、Hugo、Jekyll、Quartzから選択可能</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-チーム共有を考慮した統合提案">5. チーム共有を考慮した統合提案<a href="#5-チーム共有を考慮した統合提案" class="hash-link" aria-label="5. チーム共有を考慮した統合提案 への直接リンク" title="5. チーム共有を考慮した統合提案 への直接リンク">​</a></h3>
+<blockquote>
+<p>💭 <strong>私のまとめ要望</strong><br>
+<!-- -->「以上のオーダーを踏まえて気軽にMarkdownドキュメントをストックして、チームで共有したりすることを気軽にできるようなフォルダ内の構成やシステムを考案して」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの統合システム</strong><br>
+<!-- -->すべての要件を満たすシステムをまとめました：</p>
+<ul>
+<li>📝 ワンライナーで開始（<code>note &quot;タイトル&quot;</code>）</li>
+<li>🔧 エディタ自動検出</li>
+<li>🚀 GitHub Actions自動デプロイ</li>
+<li>📱 Issue経由でモバイル投稿も可能</li>
+<li>🔗 簡易共有（<code>./scripts/share</code>でURL生成）</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-最小構成への収束">6. 最小構成への収束<a href="#6-最小構成への収束" class="hash-link" aria-label="6. 最小構成への収束 への直接リンク" title="6. 最小構成への収束 への直接リンク">​</a></h3>
+<blockquote>
+<p>💭 <strong>私の決断</strong><br>
+<!-- -->「とりあえず書き始めたいので、最低限のセットアップだけしてほしい」</p>
+<p>「今後Docusaurus等を使っていきたいので、その前提を踏まえた書き始めるためのフォルダ構成だけ考えてください」</p>
+<p>「カテゴリだけ最小限にしてください。整理はあとからできるように考えて」</p>
+</blockquote>
+<blockquote>
+<p>🤖 <strong>Claude Codeの最終提案</strong><br>
+<!-- -->わかりました！超シンプルにいきましょう：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">my-notes/</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── docs/              # 全てのメモをここに入れる</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── intro.md       # 最初のページ</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">├── static/           </span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">│   └── img/          # 画像置き場</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">└── README.md         </span><br></span></code></pre></div></div>
+<p><strong>この構成が最高な理由：</strong></p>
+<ul>
+<li>🎯 どこに置くか迷わない</li>
+<li>✅ Docusaurus互換</li>
+<li>📁 後から整理可能</li>
+<li>🔍 grepで十分検索できる</li>
+</ul>
+<p><strong>まずは書くことから始めましょう！</strong></p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="検討結果">検討結果<a href="#検討結果" class="hash-link" aria-label="検討結果 への直接リンク" title="検討結果 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="採用した方針">採用した方針<a href="#採用した方針" class="hash-link" aria-label="採用した方針 への直接リンク" title="採用した方針 への直接リンク">​</a></h3>
+<ol>
+<li><strong>最  小限から始める</strong>: 3つのフォルダのみでスタート</li>
+<li><strong>整理は後回し</strong>: すべて<code>docs/</code>に放り込む</li>
+<li><strong>Docusaurus採用</strong>: 将来の拡張性を考慮</li>
+<li><strong>ファイル名で工夫</strong>: 日付やプレフィックスで検索性確保</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="なぜこの構成が良いか">なぜこの構成が良いか<a href="#なぜこの構成が良いか" class="hash-link" aria-label="なぜこの構成が良いか への直接リンク" title="なぜこの構成が良いか への直接リンク">​</a></h3>
+<ul>
+<li><strong>考えることが最小</strong>: どこに置くか迷わない</li>
+<li><strong>すぐ書き始められる</strong>: フォルダ作って即開始</li>
+<li><strong>Docusaurus対応</strong>: 後から機能追加が容易</li>
+<li><strong>検索で十分</strong>: 最初はgrepで探せばOK</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vibe-codingから学んだこと">Vibe Codingから学んだこと<a href="#vibe-codingから学んだこと" class="hash-link" aria-label="Vibe Codingから学んだこと への直接リンク" title="Vibe Codingから学んだこと への直接リンク">​</a></h3>
+<ol>
+<li><strong>完璧を求めない</strong>: 動くものをまず作る</li>
+<li><strong>対話で要件明確化</strong>: 話しながら本当に必要なものが見えてくる</li>
+<li><strong>段階的な複雑さ</strong>: シンプルから始めて徐々に機能追加</li>
+<li><strong>ユーザーの性格に合わせる</strong>: 整理が苦手→整理不要な仕組み</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="docusaurusセットアップの備忘録">Docusaurusセットアップの備忘録<a href="#docusaurusセットアップの備忘録" class="hash-link" aria-label="Docusaurusセットアップの備忘録 への直接リンク" title="Docusaurusセットアップの備忘録 への直 接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="セットアップ手順">セットアップ手順<a href="#セットアップ手順" class="hash-link" aria-label="セットアップ手順 への直接リンク" title="セットアップ手順 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-基本構造の作成">1. 基本構造の作成<a href="#1-基本構造の作成" class="hash-link" aria-label="1. 基本構造の作成 への直接リンク" title="1. 基本構造の作成 への直接リンク">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">mkdir -p my-notes/docs my-notes/static/img</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-初期ファイル作成">2. 初期ファイル作成<a href="#2-初期ファイル作成" class="hash-link" aria-label="2. 初期ファイル作成 への直接リンク" title="2. 初期ファイル作成 への直接リンク">​</a></h4>
+<ul>
+<li><code>docs/intro.md</code>: トップページ</li>
+<li><code>README.md</code>: プロジェクト説明</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-docusaurusインストール">3. Docusaurusインストール<a href="#3-docusaurusインストール" class="hash-link" aria-label="3. Docusaurusインストール への直接リンク" title="3. Docusaurusインストール への直接リンク">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">cd my-notes</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm init -y</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm install --save @docusaurus/core @docusaurus/preset-classic</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm install react react-dom  # 明示的に必要</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-設定ファイル作成">4. 設定ファイル作成<a href="#4-設定ファイル作成" class="hash-link" aria-label="4. 設定ファイル作成 への直接リンク" title="4. 設定ファイル作成 への直接リンク">​</a></h4>
+<p><strong>docusaurus.config.js</strong>の主要設定:</p>
+<ul>
+<li>日本語対応: <code>defaultLocale: &#x27;ja&#x27;</code></li>
+<li>Docsをルートに: <code>routeBasePath: &#x27;/&#x27;</code></li>
+<li>ブログ無効化: <code>blog: false</code></li>
+<li>自動サイドバー生成</li>
+</ul>
+<p><strong>sidebars.js</strong>:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token literal-property property">type</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&#x27;autogenerated&#x27;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token literal-property property">dirName</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&#x27;.&#x27;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain">  </span><span class="token comment" style="color:rgb(98, 114, 164)">// すべてのファイルを自動収集</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-npm-scriptsの設定">5. npm scriptsの設定<a href="#5-npm-scriptsの設定" class="hash-link" aria-label="5. npm scriptsの設定 への直接リンク" title="5. npm scriptsの設定 への直接リンク">​</a></h4>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">&quot;start&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;docusaurus start&quot;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">&quot;build&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;docusaurus build&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="遭遇した問題と解決">遭遇した問題と解決<a href="#遭遇した問題と解決" class="hash-link" aria-label="遭遇した問題と解決 への直接リンク" title="遭遇した問題と解決 への直接リンク">​</a></h3>
+<table><thead><tr><th>問題</th><th>原因</th><th>解決策</th></tr></thead><tbody><tr><td>package.jsonが認識されない</td><td>Windowsのパス問題</td><td>絶対パスで再作成</td></tr><tr><td>npm scriptsが動かない</td><td>package.jsonの更新が反映されない</td><td>ファイル削除して再作成</td></tr><tr><td>Reactエラー</td><td>依存関係の不足</td><td>React 18.xを明示的にインストール</td></tr><tr><td>CSSファイルが見つからない</td><td>ファイル未作成</td><td>src/css/custom.css作成</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="運用方法">運用方法<a href="#運用方法" class="hash-link" aria-label="運用方法 への直接リンク" title="運用方法 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="新規メモの作成">新規メモの作成<a href="#新規メモの作成" class="hash-link" aria-label="新規メモの作成 への直接リンク" title="新規メモの作成 への直接リンク">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># 日付付き</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">code docs/2025-01-28-ai-tips.md</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># プレフィックス付き</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">code docs/dev-api-optimization.md</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="フロントマター活用">フロントマター活用<a href="#フロントマター活用" class="hash-link" aria-label="フロントマター活用 への直接リンク" title="フロントマター活用 への直接リンク">​</a></h4>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token front-matter-block punctuation" style="color:rgb(248, 248, 242)">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> タイトル</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">[</span><span class="token front-matter-block front-matter yaml language-yaml">ai</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">date</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(248, 248, 242)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml datetime number">2025-01-28</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:rgb(248, 248, 242)">---</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="開発サーバー">開発サーバー<a href="#開発サーバー" class="hash-link" aria-label="開発サーバー への直接リンク" title="開発サーバー への直接リンク">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm start  # http://localhost:3000</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="今後の拡張可能性">今後の拡張可能性<a href="#今後の拡張可能性" class="hash-link" aria-label="今後の拡張可能性 への直接リンク" title="今後の拡張可能性 への直接リンク">​</a></h3>
+<ol>
+<li><strong>検索機能</strong>: Algolia統合</li>
+<li><strong>自動デプロイ</strong>: GitHub Actions</li>
+<li><strong>プラグイン追加</strong>: 画像拡大、MDXサポート</li>
+<li><strong>AI整理機能</strong>: 定期的な自動分類</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="まとめ">まとめ<a href="#まとめ" class="hash-link" aria-label="まとめ への直接リンク" title="まとめ への直接リンク">​</a></h3>
+<p>「とりあえず書く」を最優先に、最小限の構成でDocusaurusベースの知識管理システムを構築。整理は後から、まずは蓄積することに集中できる環境が完成した。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>タグ:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/AI_Research_Documents/tags/docusaurus">docusaurus</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/AI_Research_Documents/tags/setup">setup</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/AI_Research_Documents/tags/windows">windows</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/AI_Research_Documents/tags/vibe-coding">vibe-coding</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/your-org/my-notes/tree/main/docs/2025-01-28-docusaurus-setup.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>このページを編集</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated"><b><time datetime="2025-07-29T02:38:42.000Z" itemprop="dateModified">2025年7月29日</time></b>に<b>murasaqi</b>が<!-- -->最終更新</span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/AI_Research_Documents/2025-01-28-claude-code-conversations"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Claude Codeとの会話記録</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/AI_Research_Documents/2025-01-28-getting-started"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">セットアップメモ</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#背景モチベーション" class="table-of-contents__link toc-highlight">背景・モチベーション</a><ul><li><a href="#なぜ知識ベースが必要だったか" class="table-of-contents__link toc-highlight">なぜ知識ベースが必要だったか</a></li><li><a href="#理想とする要件" class="table-of-contents__link toc-highlight">理想とする要件</a></li></ul></li><li><a href="#claude-codeとの対話で方針を策定" class="table-of-contents__link toc-highlight">Claude Codeとの対話で方針を策定</a><ul><li><a href="#1-初期の提案と課題認識" class="table-of-contents__link toc-highlight">1. 初期の提案と課題認識</a></li><li><a href="#2-書き捨て自動整理型システムの検討" class="table-of-contents__link toc-highlight">2. 「書き捨て→自動整理」型システムの検討</a></li><li><a href="#3-obsidianとの比較検討" class="table-of-contents__link toc-highlight">3. Obsidianとの比較検討</a></li><li><a href="#4-エディタ要件の追加と方針転換" class="table-of-contents__link toc-highlight">4. エディタ要件の追加と方針転換</a></li><li><a href="#5-チーム共有を考慮した統合提案" class="table-of-contents__link toc-highlight">5. チーム共有を考慮した統合提案</a></li><li><a href="#6-最小構成への収束" class="table-of-contents__link toc-highlight">6. 最小構成への収束</a></li></ul></li><li><a href="#検討結果" class="table-of-contents__link toc-highlight">検討結果</a><ul><li><a href="#採用した方針" class="table-of-contents__link toc-highlight">採用した方針</a></li><li><a href="#なぜこの構成が良いか" class="table-of-contents__link toc-highlight">なぜこの構成が良いか</a></li><li><a href="#vibe-codingから学んだこと" class="table-of-contents__link toc-highlight">Vibe Codingから学んだこと</a></li></ul></li><li><a href="#docusaurusセットアップの備忘録" class="table-of-contents__link toc-highlight">Docusaurusセットアップの備忘録</a><ul><li><a href="#セットアップ手順" class="table-of-contents__link toc-highlight">セットアップ手順</a></li><li><a href="#遭遇した問題と解決" class="table-of-contents__link toc-highlight">遭遇した問題と解決</a></li><li><a href="#運用方法" class="table-of-contents__link toc-highlight">運用方法</a></li><li><a href="#今後の拡張可能性" class="table-of-contents__link toc-highlight">今後の拡張可能性</a></li><li><a href="#まとめ" class="table-of-contents__link toc-highlight">まとめ</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 AI Research Documents.</div></div></div></footer></div>
+</body>
+</html>
