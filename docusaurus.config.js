@@ -43,7 +43,7 @@ const config = {
       ({
         docs: {
           routeBasePath: '/', // Docs at the root
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars-generator.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
