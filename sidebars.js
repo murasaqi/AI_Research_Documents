@@ -19,6 +19,7 @@ const sidebars = {
         '2025-01-28-docusaurus-setup',
         '2025-01-28-getting-started',
         'ai-dialogue-format-template',
+        'blank-template',
         'mermaid-test',
       ],
     },
