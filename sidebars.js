@@ -11,6 +11,7 @@ const sidebars = {
       collapsed: false,
       items: [
         '2025-07-29-claude-session-logging-with-screenshots',
+        '2025-01-29-ai-knowledge-logger-project',
         '2025-01-29-ai-sketch-to-3d-game-asset',
         '2025-01-29-docusaurus-customization',
         '2025-01-28-ai-dialogue-format',
